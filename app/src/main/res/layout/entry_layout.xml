@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/entrynametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entry Text"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/entrytimetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entrynametext"
+        android:text="Entry Time"
+        android:textSize="15sp"
+        android:layout_marginLeft="15sp"/>
+
+    <TextView
+        android:id="@+id/entryamounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entry Amount"
+        android:layout_margin="35dp"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+
+</RelativeLayout>

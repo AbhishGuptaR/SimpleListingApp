@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".AddExpense">
+
+    <EditText
+        android:id="@+id/expenseentry"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:hint="Type your entry name here"/>
+
+    <EditText
+        android:id="@+id/expenseamount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:hint="Type your amount here"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Select Group"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        />
+    
+    <Spinner
+        android:id="@+id/expensegroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown">
+    </Spinner>
+
+        <RadioGroup
+            android:id="@+id/expenseradiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioexpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense" />
+
+            <RadioButton
+                android:id="@+id/radioreceivables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recievables"/>
+
+        </RadioGroup>
+
+    <ImageView
+        android:id="@+id/addimage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/addimage"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="10dp"
+        android:background="#ffff00"
+        android:text="done"
+        android:onClick="addEntry"
+        />
+
+</LinearLayout>
